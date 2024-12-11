@@ -1,0 +1,40 @@
+.box {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    background-color: #24353F;
+}
+
+body {
+    background-color: #24353F;
+}
+
+.form-control,
+.form-control:focus {
+    background-color: #24353F;
+    color: white;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+h1 {
+    color: #17a2b8;
+}
+
+.form-control::placeholder {
+    color: #B6B6B6;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home {
+    margin-top: 150px;
+}
+
+.nav-link {
+    background-color: #17a2b8;
+}

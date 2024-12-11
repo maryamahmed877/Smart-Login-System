@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container my-5 text-center">
+        <div class="box m-auto w-75 p-5">
+            <h1>Smart Login System</h1>
+            <input type="text" class="form-control my-3" oninput="validation(this)" id="newName"
+                placeholder="Enter your name">
+            <div class="alert alert-danger d-none  text-start">You must Enter Your Name</div>
+            <input type="email" class="form-control my-3" oninput="validation(this)" id="newEmail"
+                placeholder="Enter your email">
+            <div class="alert alert-danger d-none p-0 m-0 text-start">
+                <p>Please enter a valid email..letters, numbers, ._+- in local part, @ symbol, valid domain with
+                    letters, numbers, dots, hyphens, and a TLD (e.g., .com).</p>
+            </div>
+            <input type="password" class="form-control my-3" oninput="validation(this)" id="newPassword"
+                placeholder="Enter your password">
+            <div class="alert alert-danger d-none p-0 m-0 text-start">
+                <p>Password must be at least 8 characters long, include uppercase, lowercase, a number, and a special
+                    character (e.g., @$!%*?&).</p>
+            </div>
+            <div id="incorrectSignup" class="text-danger mb-5"></div>
+            <button type="submit" class="w-100 btn btn-outline-info signUpBtn">Sign Up</button>
+            <p class="text-white my-2">You have an account? <a class="text-white" href="index.html">Signin</a></p>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
